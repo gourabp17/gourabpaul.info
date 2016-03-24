@@ -1,0 +1,47 @@
+#abilities{
+    padding-top:25px;
+    padding-bottom: 35px;
+}
+.abil .topic{
+    font-size: 110%;
+}
+#abilities .details p span{
+    float: right;
+    color: #51ba7d;
+    transition-property: margin-left;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+
+}
+#abilities .details div:nth-child(1) div:nth-child(2) p:nth-child(6) span:nth-child(-n+1),
+#abilities .details div:nth-child(1) div:nth-child(2) p:nth-child(7) span:nth-child(-n+2),
+#abilities .details div:nth-child(1) div:nth-child(2) p:nth-child(8) span:nth-child(-n+3),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(3) span:nth-child(-n+1),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(4) span:nth-child(-n+1),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(7) span:nth-child(-n+1),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(8) span:nth-child(-n+1),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(9) span:nth-child(-n+2),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(10) span:nth-child(-n+2),
+#abilities .details div:nth-child(1) div:nth-child(3) p:nth-child(11) span:nth-child(-n+2),
+#abilities .details div:nth-child(3) div:nth-child(1) p:nth-child(4) span:nth-child(-n+1),
+#abilities .details div:nth-child(3) div:nth-child(1) p:nth-child(5) span:nth-child(-n+3),
+#abilities .details div:nth-child(3) div:nth-child(1) p:nth-child(6) span:nth-child(-n+3){
+    color: #cbcbcb;
+}
+#abilities .details p:hover{
+    background-color: #d1d4d7;
+}
+#abilities .details p:hover> span{
+    margin-left: 2px;
+}
+
+#abilities .details{
+
+    font-size: 130%;
+}
+#abilities .details p{
+    font-size: 85%;
+}
+#abilities .details p span{
+    font-size: 120%;
+}

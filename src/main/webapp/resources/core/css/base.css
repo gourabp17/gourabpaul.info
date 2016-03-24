@@ -1,0 +1,11 @@
+.form-inline{
+	padding: 75px 0px 10px 0px;
+}
+.search_map{
+	padding-top: 25px;
+	border-top: 1px grey solid;
+}
+.searchresult div{
+	margin: 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,51 @@
+#experience{
+     line-height: 1.6;
+     background-color: #F3EFE0;
+     font-size: 110%;
+}
+.exprn .topic{
+    font-size: 130%;
+    margin-left: 10px;
+}
+#experience .exphd{
+    font-weight: 700;
+    font-size: 120%;
+    color: #337495;
+    
+}
+#experience .details .exp div:nth-child(2){
+    font-weight: 700;
+    font-size: 110%;
+    
+}
+#experience .details .exp p{
+   font-weight: 600;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.proj .client{
+    color: #337495;
+    font-size: 110%;
+}
+.proj .role{
+    color: #337495;
+}
+.proj .role, .proj b, .proj ul{
+    font-size: 110%;
+}
+.proj >b{
+    margin-left: 15px;
+}
+
+.proj:last-of-type .row div:nth-child(odd){
+    font-weight: 800;
+}
+.proj:last-of-type .row div:nth-child(odd) p{
+    font-weight: 500;
+    color: #a19393
+}
+.proj:last-of-type a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+.prfl> div:nth-of-type(1){
+    text-align: center;
+    font-size: 160%;
+    color: #8e9aab;
+}
+.prfl{
+    font-size: 130%;
+    color: #6c7180;
+    margin-bottom: 50px;
+}
+.prfl a:hover{
+    text-decoration: none;
+}
+.prfl .topic{
+    margin-left: 10px;
+    font-size: 130%;
+}
+
+    .myimg{
+        text-align: center;
+    }
+
+.myimg img{
+    margin-top: 20px;
+    border-radius: 200px;
+    max-height: 250px;
+    max-width: 250px;
+
+    border: 10px solid rgba(25, 143, 147, .1);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    color: #198f93
+}

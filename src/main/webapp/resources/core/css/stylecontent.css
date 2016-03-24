@@ -1,0 +1,62 @@
+#myprofile >div:first-of-type,#abilities >div:first-of-type,
+#contact >div:first-of-type,#experience >div:first-of-type{
+    color: #22A39F;
+    text-align: center;
+    font-size: 300%;
+    font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
+}
+#myprofile,#experience,#abilities,#contact{
+    padding-top:40px;
+    padding-bottom: 20px;
+}
+#myprofile hr,#abilities hr ,#contact hr ,#experience hr {
+    border-top-color: #bcbec0;
+    // width: 70%
+}
+
+.row{
+    margin-right: 0px;
+}
+.topic{
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    color: #22A39F;
+    text-decoration: underline;
+    margin: 15px 0;
+}
+
+@media(max-width:600px){
+  #abilities   .details p span{
+        font-size: 90%;
+    }
+  #abilities   .details p{
+        font-size: 80%;
+    }
+    #myprofile >div:first-of-type,#abilities >div:first-of-type,
+    #contact >div:first-of-type,#experience >div:first-of-type{
+
+        font-size: 220%;
+    }
+    .topic{
+        font-size: 110%
+    }
+}
+
+sub {
+    vertical-align: super;
+    font-size: small;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 5em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+#back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
