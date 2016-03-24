@@ -81,9 +81,7 @@ function backtotop() {
     });
 }
 
-function download_count(type) {
-    $.get(actualurl + "/downloads/" + type);
-}
+
 
 function contact() {
     var name = document.getElementById("contactName").value;
@@ -94,7 +92,7 @@ function contact() {
 
     if (name != "" && email != "" && phone != "" && subject != "" && comment != "") {
 
-        $.get(actualurl + "/contact/contactme",
+        $.get("contact/contactme",
                 {
                     name: name,
                     email: email,

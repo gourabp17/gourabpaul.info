@@ -24,7 +24,8 @@ public class AppConfig extends WebMvcConfigurerAdapter  {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 	    registry.addInterceptor(new LoggingInterceptor()).addPathPatterns("/**")
-	    .excludePathPatterns("/").excludePathPatterns("/contact/maildoctype");
+	    .excludePathPatterns("/").excludePathPatterns("/contact/maildoctype")
+	    .excludePathPatterns("/download/**");
 	}
 	@Override
 	public void addResourceHandlers(final ResourceHandlerRegistry registry) {

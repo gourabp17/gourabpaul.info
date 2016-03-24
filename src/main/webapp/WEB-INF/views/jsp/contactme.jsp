@@ -140,13 +140,13 @@
             </div>
             <div class="modal-body adjustBodyModl">
               
-                <a  href="<?php echo $GLOBALS['actualurl'] ?>/gp/views/files/GourabPaul.pdf" download="Gourab_Paul.pdf" onclick="download_count('GourabPaul/pdf')">
+                <a  href="<c:url value='/download/pdf' />" >
                     <button type="button" class="btn btn-primary">PDF</button>
                 </a>
-                <a  href="<?php echo $GLOBALS['actualurl'] ?>/gp/views/files/GourabPaul.doc"  download="Gourab_Paul.doc" onclick="download_count('GourabPaul/doc')">
+                <a href="<c:url value='/download/doc' />" >
                     <button type="button" class="btn btn-primary">DOC</button>
                 </a>
-                <a  href="<?php echo $GLOBALS['actualurl'] ?>/gp/views/files/GourabPaul.docx"  download="Gourab_Paul.docx" onclick="download_count('GourabPaul/docx')">
+                <a  href="<c:url value='/download/docx' />" >
                     <button type="button" class="btn btn-primary">DOCx</button>
                 </a>
                 
