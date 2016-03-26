@@ -7,29 +7,29 @@ import javax.servlet.http.HttpSession;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.gourabpaul.web.model.WriteLogs;
+
 public class LoggingInterceptor implements HandlerInterceptor {
 	@Override
-	public boolean preHandle(HttpServletRequest request,
-			HttpServletResponse response, Object handler) throws Exception {
-		HttpSession sess = request.getSession();
-		System.out.println(sess.getAttribute("succesfullogin"));
-		if (sess.getAttribute("succesfullogin") == null) {
-			response.sendRedirect("");
-			return false;
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+			throws Exception {
+		//String ipAddress = request.getRemoteAddr();
+		String ipAddress = request.getHeader("X-FORWARDED-FOR");
+		if (ipAddress == null) {
+			ipAddress = request.getRemoteAddr();
 		}
+		WriteLogs.visitLogs(ipAddress,request.getRequestURL().toString());
 		return true;
 	}
 
 	@Override
-	public void postHandle(HttpServletRequest request,
-			HttpServletResponse response, Object handler,
+	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		// System.out.println("---method executed---");
-	}
+//System.out.println("post");	
+		}
 
 	@Override
-	public void afterCompletion(HttpServletRequest request,
-			HttpServletResponse response, Object handler, Exception ex)
+	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
 		// System.out.println("---Request Completed---");
 	}
