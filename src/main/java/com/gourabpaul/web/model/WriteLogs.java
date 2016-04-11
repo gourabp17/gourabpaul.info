@@ -17,7 +17,7 @@ public class WriteLogs {
 		String formattedDate = sdf.format(date);
 		System.out.println(formattedDate); 
 		
-		File fout = new File("/tmp/resume/visit_logs_gp.txt");
+		File fout = new File("/online/resume/visit_logs_gp.txt");
 		FileOutputStream fos = new FileOutputStream(fout,true);
 
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));

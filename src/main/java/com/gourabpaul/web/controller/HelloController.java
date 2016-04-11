@@ -47,7 +47,7 @@ public class HelloController {
 	@RequestMapping(value = "/download/{type}", method = RequestMethod.GET)
 	public void download(@PathVariable("type") String type,HttpServletResponse response) {
 		System.out.println(type);
-		File file = new File("/tmp/resume/GourabPaul_3yrs_Java_Web_developer."+type);
+		File file = new File("/online/resume/GourabPaul_3yrs_Java_Web_developer."+type);
 		InputStream is = null;
 		try {
 			is = new FileInputStream(file);
@@ -84,7 +84,7 @@ public class HelloController {
 	@RequestMapping(value = "/visit", method = RequestMethod.GET)
 	public void downloadVisit(HttpServletResponse response) {
 		System.out.println("download visit");
-		File file = new File("/tmp/resume/visit_logs_gp.txt");
+		File file = new File("/online/resume/visit_logs_gp.txt");
 		InputStream is = null;
 		try {
 			is = new FileInputStream(file);

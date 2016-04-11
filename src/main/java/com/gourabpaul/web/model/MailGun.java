@@ -58,7 +58,7 @@ public class MailGun {
 	       //4) create new MimeBodyPart object and set DataHandler object to this object      
 	         MimeBodyPart messageBodyPart2 = new MimeBodyPart();  
 	       
-	         String filename = "/tmp/resume/GourabPaul_3yrs_Java_Web_developer."+radiovalue;//change accordingly  
+	         String filename = "/online/resume/GourabPaul_3yrs_Java_Web_developer."+radiovalue;//change accordingly  
 	         try {
 				new FileInputStream(filename).close();
 			} catch (IOException e) {
