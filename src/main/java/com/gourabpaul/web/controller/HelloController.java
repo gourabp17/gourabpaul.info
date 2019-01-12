@@ -41,8 +41,7 @@ public class HelloController {
 		System.out.println(email);
 		MailGun mg= new MailGun();
 		mg.sendMail(email,radiovalue);
-		System.out.println("Hello everyone");
-		System.out.println("Happy new year");
+		System.out.println("Hello  new year 2019");
 		return "send";
 
 	}
