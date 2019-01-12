@@ -41,7 +41,7 @@ public class HelloController {
 		System.out.println(email);
 		MailGun mg= new MailGun();
 		mg.sendMail(email,radiovalue);
-		System.out.println("Hello  new year 2019");
+		System.out.println("Hello  new year 2019. Goodbye 2018"); //commited the changes by Person B2
 		return "send";
 
 	}
